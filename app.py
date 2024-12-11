@@ -1,7 +1,6 @@
 import os
 from flask import jsonify
 from flask import Flask, render_template, request, redirect, url_for, flash, session
-from datetime import datetime
 from semantic_search import SemanticSearch
 from lexical_search import LexicalSearch
 from hybrid_search import reciprocal_rank_fusion
@@ -59,6 +58,5 @@ def send_query():
         return render_template('search.html', query=query, results=results, is_loading=is_loading)
     return redirect(url_for('search'))
 
-    
 if __name__ == "__main__":
     app.run(debug=True)

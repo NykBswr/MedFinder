@@ -7,8 +7,10 @@ import nltk
 from nltk.corpus import stopwords
 from textblob import TextBlob
 from rank_bm25 import BM25L
+import glob
 
 nltk.download('punkt')
+nltk.download('punkt_tab')
 nltk.download('stopwords')
 nltk.download('wordnet')
 nltk.download('averaged_perceptron_tagger')
@@ -101,12 +103,12 @@ class LexicalSearch:
             i += 1
 
         if len(data) > 1:
-          tokenized_corpus = [doc.split(" ") for doc in data]
-          tokenized = BM25L(tokenized_corpus)
-          with open('corpus_sparse_tokenized_all_data_ordered.pkl', 'wb') as file:
-              pickle.dump(tokenized, file)
+            tokenized_corpus = [doc.split(" ") for doc in data]
+            tokenized = BM25L(tokenized_corpus)
+            with open('corpus_sparse_tokenized_all_data_ordered.pkl', 'wb') as file:
+                pickle.dump(tokenized, file)
         else:
-          tokenized = data[0].split(" ")
+            tokenized = data[0].split(" ")
 
         return tokenized
 
