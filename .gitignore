@@ -1,0 +1,32 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*.egg-info/
+*.egg
+*.pyo
+*.pyd
+
+# Flask environment files
+instance/
+env/
+venv/
+ENV/
+*.env
+*.flaskenv
+
+# TailwindCSS generated files
+node_modules/
+dist/
+public/
+
+# Compiled source files
+*.min.css
+*.map
+
+# Editor/IDE specific files
+.vscode/
+.idea/
+.DS_Store
+*.swp
+
+retail.json
