@@ -9,7 +9,6 @@ from textblob import TextBlob
 from rank_bm25 import BM25L
 import glob
 
-nltk.download('punkt')
 nltk.download('punkt_tab')
 nltk.download('stopwords')
 nltk.download('wordnet')
@@ -17,6 +16,7 @@ nltk.download('averaged_perceptron_tagger')
 
 class LexicalSearch:
 
+    # def __init__(self, corpus_tokenized_path='corpus_sparse_tokenized_all_data_ordered.pkl'):
     def __init__(self, corpus_tokenized_path='corpus_sparse_tokenized_all_data_ordered.pkl'):
         self.corpus_tokenized_path = corpus_tokenized_path
         self.stop_words = set(stopwords.words('indonesian'))

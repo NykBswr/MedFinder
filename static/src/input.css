@@ -79,10 +79,6 @@
     margin: 2px;
 }
 
-.boxes-svg2:hover::before {
-    margin: 1.5px;
-}
-
 .boxes-svg:hover::before {
     position: relative;
     background: transparent;
