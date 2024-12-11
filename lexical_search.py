@@ -109,7 +109,6 @@ class LexicalSearch:
                 pickle.dump(tokenized, file)
         else:
             tokenized = data[0].split(" ")
-
         return tokenized
 
     def rank(self, corpus, query):

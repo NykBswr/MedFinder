@@ -5,6 +5,7 @@ from semantic_search import SemanticSearch
 from lexical_search import LexicalSearch
 from hybrid_search import reciprocal_rank_fusion
 import pandas as pd
+import glob
 
 app = Flask(__name__)
 
