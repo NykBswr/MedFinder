@@ -14,6 +14,9 @@ ENV/
 *.env
 *.flaskenv
 
+# Flask cache
+*.log
+
 # TailwindCSS generated files
 node_modules/
 dist/
@@ -28,5 +31,3 @@ public/
 .idea/
 .DS_Store
 *.swp
-
-retail.json
