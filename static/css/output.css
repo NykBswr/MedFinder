@@ -642,10 +642,6 @@ video {
   display: flex;
 }
 
-.hidden {
-  display: none;
-}
-
 .h-7 {
   height: 1.75rem;
 }
@@ -864,16 +860,6 @@ video {
   font-size: 5.1vw;
 }
 
-.text-sm {
-  font-size: 0.875rem;
-  line-height: 1.25rem;
-}
-
-.text-xl {
-  font-size: 1.25rem;
-  line-height: 1.75rem;
-}
-
 .text-base {
   font-size: 1rem;
   line-height: 1.5rem;
@@ -881,6 +867,16 @@ video {
 
 .text-lg {
   font-size: 1.125rem;
+  line-height: 1.75rem;
+}
+
+.text-sm {
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+}
+
+.text-xl {
+  font-size: 1.25rem;
   line-height: 1.75rem;
 }
 
@@ -1026,7 +1022,7 @@ video {
   background: white;
   border-radius: 4px;
   z-index: -1;
-  margin: 2px;
+  margin: 1.5px;
 }
 
 .boxes-svg:hover::before {
