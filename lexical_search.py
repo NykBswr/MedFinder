@@ -103,12 +103,12 @@ class LexicalSearch:
             i += 1
 
         if len(data) > 1:
-          tokenized_corpus = [doc.split(" ") for doc in data]
-          tokenized = BM25L(tokenized_corpus)
-          with open('corpus_sparse_tokenized_all_data_ordered.pkl', 'wb') as file:
-              pickle.dump(tokenized, file)
+            tokenized_corpus = [doc.split(" ") for doc in data]
+            tokenized = BM25L(tokenized_corpus)
+            with open('corpus_sparse_tokenized_all_data_ordered.pkl', 'wb') as file:
+                pickle.dump(tokenized, file)
         else:
-          tokenized = data[0].split(" ")
+            tokenized = data[0].split(" ")
         return tokenized
 
     def rank(self, corpus, query):

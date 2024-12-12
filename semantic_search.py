@@ -9,8 +9,7 @@ import time
 import glob
 
 class SemanticSearch:
-
-    def __init__(self, corpus_embeddings_path='corpus_dense_embeddings_all_data_ordered.npy'):
+    def __init__(self, corpus_embeddings_path='corpus_dense_embeddings_sbert_mpnet.npy'):
         self.corpus_embeddings_path = corpus_embeddings_path
         self.device = torch.device("cuda:0" if torch.cuda.is_available() else "cpu")
 
@@ -24,7 +23,7 @@ class SemanticSearch:
 
         for sentence in corpus:
             new_tokens = self.tokenizer.encode_plus(sentence, max_length=max_length, truncation=True,
-                                                   padding='max_length', return_tensors='pt')
+                                                    padding='max_length', return_tensors='pt')
             tokens['input_ids'].append(new_tokens['input_ids'][0])
             tokens['attention_mask'].append(new_tokens['attention_mask'][0])
 
@@ -62,7 +61,7 @@ class SemanticSearch:
                 max_size = 100
                 smaller_batch = [corpus[i:i + max_size] for i in range(0, len(corpus), max_size)]
                 print(len(corpus), 'in corpus with', max_length, ' max length word separated into', len(smaller_batch),
-                      'smaller batch')
+                        'smaller batch')
                 i = 1
                 for batch in smaller_batch:
                     mean_pooled = self.encode(batch, max_length)
@@ -96,7 +95,7 @@ class SemanticSearch:
                 corpus.append(np.load(e))
                 mean_pooled = np.vstack(corpus)
                 print('Success corpus append')
-            np.save('corpus_dense_embeddings_all_data_ordered.npy', mean_pooled)
+            np.save('corpus_dense_embeddings_sbert_mpnet.npy', mean_pooled)
 
         return mean_pooled
 
