@@ -1,5 +1,5 @@
 <svg width="540" height="540" viewBox="0 0 540 540" fill="none" xmlns="http://www.w3.org/2000/svg">
-<rect x="0.5" y="0.5" width="539" height="539" fill="white" stroke="black"/>
+<rect width="540" height="540" rx="270" fill="white"/>
 <path d="M206.004 300.5C168.008 293.501 121.504 257.5 121.504 192L170 245.5L206.004 271L276.004 259L312.004 228L335.504 194.5C335.256 215.936 334.644 227.939 322.504 249L407.004 325.5C416 333.5 419 348.5 399.965 360.5C386 370.5 376 367.5 363.004 360L302.504 300.5C299.309 296.093 300.504 289 300.504 289L293.004 280.5C287.5 289 244 307.5 206.004 300.5Z" fill="#B0C7D1"/>
 <mask id="path-3-outside-1_83_8" maskUnits="userSpaceOnUse" x="62" y="376" width="421" height="69" fill="black">
 <rect fill="white" x="62" y="376" width="421" height="69"/>
@@ -31,7 +31,7 @@
 <stop offset="1" stop-color="#5B247A"/>
 </linearGradient>
 <radialGradient id="paint2_diamond_83_8" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(354 298.5) rotate(42.3102) scale(105.475 108.824)">
-<stop stop-color="#33AADC"/>
+<stop stop-color="#3193BC"/>
 <stop offset="1" stop-color="#5B247A"/>
 </radialGradient>
 <radialGradient id="paint3_diamond_83_8" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(151.5 111.5) rotate(36.8373) scale(351.1)">

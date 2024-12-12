@@ -2,7 +2,7 @@
 
 ## Description
 
-**MedFinder** is an intuitive and efficient web-based application designed to help users find relevant medication based on their symptoms. The system utilizes both **semantic search** and **lexical search** models to process user queries and recommend medications with detailed information such as usage instructions, price range, dosage, and side effects. Built using **Flask** as the web framework and **Tailwind CSS** for responsive design, MedFinder provides a seamless user experience, making it easier for healthcare professionals and patients to access medication-related information.
+**MedFinder** is an intuitive and efficient web-based application designed to help users find relevant medication based on their symptoms. The system utilizes both **semantic search** and **lexical search** models to process user queries and recommend medications with detailed information such as usage instructions, price range, dosage, and side effects. Built using **Flask** as the web framework and **Tailwind CSS** for responsive design, MedFinder provides a seamless user experience, making it easier for healthcare professionals and patients to access medication related information.
 
 The application processes queries using two models combined into one hybrid model:
 
